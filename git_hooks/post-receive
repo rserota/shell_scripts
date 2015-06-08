@@ -1,0 +1,7 @@
+#!/bin/sh
+cd /opt/li73-promo
+
+# unset GIT_DIR so we can use PWD for git commands instead. 
+unset GIT_DIR
+
+npm run deploy
