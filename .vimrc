@@ -47,5 +47,13 @@ set nocompatible
 "soft word-wrap (no linebreaks)
 set wrap linebreak nolist
 
+"add extra text to indicate wrapped lines
+set showbreak=>>>>>>>>
+
+"wait 250 ms between keys of a sequence, instead of 1000
+set timeoutlen=250
+
 "snippet commands
 nnoremap ,html :read ~/.vim/snippets/boilerplate.html<CR>3jf>a
+
+
