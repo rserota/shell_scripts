@@ -12,6 +12,7 @@ alias ...="cd ../.."
 alias l="ls"
 alias sl="ls"
 alias la=" ls -lah"
+alias code="open -a '/Applications/Visual Studio Code.app'"
 
 # git aliases
 alias gts="git status"
