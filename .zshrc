@@ -26,6 +26,8 @@ alias gl="git log --graph --all --decorate=full"
 
 
 export CLICOLOR=1
+LS_COLORS='di=1:fi=96:*.m=31:*.py=32:*.txt=36:*.out=35'
+
 
 
 # Uncomment the following line to use case-sensitive completion.
@@ -39,7 +41,7 @@ export CLICOLOR=1
 # DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
-  DISABLE_LS_COLORS="true"
+# DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
