@@ -20,8 +20,11 @@ set softtabstop=4
 "when indenting, use 4-space indentations
 set shiftwidth=4
 
-"automatically insert spaces when pressing tab
+"automatically insert spaces when pressing tab.
 "set expandtab
+
+"keep the cursor in the middle(ish) of the screen
+set scrolloff=7
 
 "does what it says on the tin
 set autoindent
@@ -30,6 +33,10 @@ set autoindent
 set number
 
 set bufhidden=delete
+
+"enable the mouse in (V)isual mode and (I)nsert mode, without affecting
+"behavior in normal mode.
+set mouse=vi
 
 "set file browser to tree-mode
 "let g:netrw_liststyle = 3
@@ -50,8 +57,13 @@ inoremap nuy <Esc>
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
+"split the current line (left or right of the cursor)
+nnoremap s a<CR><Esc>
+nnoremap S i<CR><Esc>
 
+"leader+s to save
 nnoremap <leader>s :w<CR>
+"leader+o to open a file
 nnoremap <leader>o :call feedkeys(":e \<Tab>", 'tn')<CR>
 
 "Buffer management
