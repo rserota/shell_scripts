@@ -3,6 +3,12 @@
 "allow searching through subfolders. enhances tab-completion
 "set path+=**
 
+"might improve go-to-file functionality?
+"set path=.,src,node_modules
+
+"improve go-to-file functionality by guessing file extensions
+set suffixesadd=.js,.jsx
+
 "display all matching files when using tab completion
 set wildmenu
 set wildmode=longest,list
