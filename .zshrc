@@ -24,6 +24,9 @@ alias gb="git branch"
 alias gba="git branch -a"
 alias gl="git log --graph --all --decorate=full"
 
+# docker aliases
+alias dr="docker"
+alias drc="docker-compose"
 
 export CLICOLOR=1
 LS_COLORS='di=1:fi=96:*.m=31:*.py=32:*.txt=36:*.out=35'
