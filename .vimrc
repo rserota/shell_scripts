@@ -17,6 +17,9 @@ set guitablabel=%N/\ %t\ %M
 filetype on
 filetype plugin on
 
+"highlight the current line
+set cursorline
+
 "4 space tabs
 set tabstop=4
 
