@@ -1,17 +1,10 @@
 
-
-"allow searching through subfolders. enhances tab-completion
-"set path+=**
-
-"might improve go-to-file functionality?
-"set path=.,src,node_modules
-
 "improve go-to-file functionality by guessing file extensions
 set suffixesadd=.js,.jsx
 
-"display all matching files when using tab completion
+"display all matching files when using tab completion, then press tab to cycle through them
 set wildmenu
-set wildmode=longest,list
+set wildmode=list:longest,full
 
 set guitablabel=%N/\ %t\ %M
 filetype on
@@ -74,6 +67,8 @@ nnoremap S i<CR><Esc>
 nnoremap <leader>s :w<CR>
 "leader+o to open a file
 nnoremap <leader>o :call feedkeys(":e \<Tab>", 'tn')<CR>
+"leader+f to search for files
+nnoremap <leader>f :find **/*
 
 "Buffer management
 nnoremap <leader>t :NERDTreeToggle<CR>
