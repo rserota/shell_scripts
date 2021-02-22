@@ -68,7 +68,7 @@ nnoremap <leader>s :w<CR>
 "leader+o to open a file
 nnoremap <leader>o :call feedkeys(":e \<Tab>", 'tn')<CR>
 "leader+f to search for files
-nnoremap <leader>f :find **/*
+nnoremap <leader>f :e **/*
 
 "Buffer management
 nnoremap <leader>t :NERDTreeToggle<CR>
