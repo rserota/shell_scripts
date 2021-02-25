@@ -81,8 +81,8 @@ nnoremap <leader>6 :b6<CR>
 nnoremap <leader>7 :b7<CR>
 nnoremap <leader>8 :b8<CR>
 nnoremap <leader>9 :b9<CR>
-nnoremap <leader>bn :bn<CR>
-nnoremap <leader>bp :bp<CR>
+nnoremap <leader>] :bn<CR>
+nnoremap <leader>[ :bp<CR>
 
 "Move between splits
 nnoremap <leader>l <C-W><C-l>
