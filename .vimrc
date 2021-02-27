@@ -71,27 +71,30 @@ nnoremap <leader>o :call feedkeys(":e \<Tab>", 'tn')<CR>
 nnoremap <leader>f :e **/*
 
 "Buffer management
+
+"change buffer by number according to visible buffer orderf
+function ChangeBuffer(buffN)
+	let buffers = []
+	bufdo call add(buffers, @%)
+	execute 'edit' buffers[a:buffN]
+endfunction
+
 nnoremap <leader>t :NERDTreeToggle<CR>
-nnoremap <leader>1 :b1<CR>
-nnoremap <leader>2 :b2<CR>
-nnoremap <leader>3 :b3<CR>
-nnoremap <leader>4 :b4<CR>
-nnoremap <leader>5 :b5<CR>
-nnoremap <leader>6 :b6<CR>
-nnoremap <leader>7 :b7<CR>
-nnoremap <leader>8 :b8<CR>
-nnoremap <leader>9 :b9<CR>
+nnoremap <leader>1 :call ChangeBuffer(0)<CR>
+nnoremap <leader>2 :call ChangeBuffer(1)<CR>
+nnoremap <leader>3 :call ChangeBuffer(2)<CR>
+nnoremap <leader>4 :call ChangeBuffer(3)<CR>
+nnoremap <leader>5 :call ChangeBuffer(4)<CR>
+nnoremap <leader>6 :call ChangeBuffer(5)<CR>
+nnoremap <leader>7 :call ChangeBuffer(6)<CR>
+nnoremap <leader>8 :call ChangeBuffer(7)<CR>
+nnoremap <leader>9 :call ChangeBuffer(8)<CR>
 nnoremap <leader>] :bn<CR>
 nnoremap <leader>[ :bp<CR>
 
-"Move between splits
-nnoremap <leader>l <C-W><C-l>
-nnoremap <leader>h <C-W><C-h>
-
-
-
 "snippet commands
 nnoremap ,html :read ~/.vim/snippets/boilerplate.html<CR>3jf>a
+nnoremap ,log :read ~/.vim/snippets/log.js<CR>f)i
 
 
 "allow unsaved changes in hidden buffers
