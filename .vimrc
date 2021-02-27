@@ -76,7 +76,7 @@ nnoremap <leader>f :e **/*
 function ChangeBuffer(buffN)
 	let buffers = []
 	bufdo call add(buffers, @%)
-	execute 'edit' buffers[a:buffN]
+	execute 'b' buffers[a:buffN]
 endfunction
 
 nnoremap <leader>t :NERDTreeToggle<CR>
