@@ -1,6 +1,6 @@
 
 "improve go-to-file functionality by guessing file extensions
-set suffixesadd=.js,.jsx
+set suffixesadd=.js,.jsx,.ts
 
 "display all matching files when using tab completion, then press tab to cycle through them
 set wildmenu
@@ -168,6 +168,11 @@ Plug 'altercation/vim-colors-solarized'
 syntax enable
 set background=light
 colorscheme solarized
+
+"automatically use either the new or old syntax parsing regex, whichever is faster
+"this stops vim from crashing on .ts files, among others
+"this should be the default???? I don't know why this is necessary
+set regexpengine=0
 
 set list 
 set listchars=tab:·\ 
