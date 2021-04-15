@@ -131,10 +131,6 @@ let NERDTreeQuitOnOpen = 1 " close nerdtree after opening a file
 let NERDTreeMinimalUI = 1
 " autocmd vimenter * NERDTree " open nerdtree when vim starts
 
-" Git in VimNERDTreeMinimalUI
-Plug 'tpope/vim-fugitive'
-
-
 " Surround text in quotes or braces or whatever
 Plug 'tpope/vim-surround'
 
