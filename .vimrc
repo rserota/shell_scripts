@@ -40,14 +40,8 @@ set bufhidden=delete
 "behavior in normal mode.
 set mouse=vi
 
-"set file browser to tree-mode
-"let g:netrw_liststyle = 3
-
 "remove huge useless banner from file browser
 "let g:netrw_banner = 0
-
-"open files in a new tab
-"let g:netrw_browse_split = 3
 
 "keybindings. mostly other ways to get to normal mode
 inoremap kk <Esc>
