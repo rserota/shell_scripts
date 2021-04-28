@@ -34,8 +34,8 @@ set autoindent
 "line numbers
 set number
 
-set bufhidden=delete
-
+"get fresh directory listing instead of reusing old one
+let g:netrw_fastbrowse = 0
 "enable the mouse in (V)isual mode and (I)nsert mode, without affecting
 "behavior in normal mode.
 set mouse=vi
